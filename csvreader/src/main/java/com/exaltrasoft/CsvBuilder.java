@@ -1,5 +1,7 @@
 package com.exaltrasoft;
 
+import com.exaltrasoft.model.CsvFile;
+
 public interface CsvBuilder {
 
   /**
@@ -10,4 +12,11 @@ public interface CsvBuilder {
    * @return CsvBuilder.
    */
   CsvBuilder resourcePath(String resourcePath);
+
+  /**
+   * Build CSV file.
+   *
+   * @return CsvFile.
+   */
+  CsvFile build();
 }
